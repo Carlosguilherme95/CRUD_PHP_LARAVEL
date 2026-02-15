@@ -4,7 +4,7 @@ namespace App\Constants;
 
 
  class Table {
-    public const Clientes = 'clientes';
+    public const CLIENTES = 'clientes';
 }
 
 

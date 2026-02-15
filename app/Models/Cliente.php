@@ -8,7 +8,7 @@ use App\Constants\Table;
 
 class Cliente extends Model
 {
-    protected $table = Table::CADASTRO_CLIENTE_TB;
+    protected $table = Table::CLIENTES;
 
     protected $fillable = [
         'razao_social',

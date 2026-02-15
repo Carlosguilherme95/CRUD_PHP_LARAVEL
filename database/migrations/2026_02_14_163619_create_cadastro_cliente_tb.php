@@ -12,9 +12,9 @@ return new class extends Migration
      */
     public function up(): void
     {   
-        if(!Schema::hasTable(Table::CADASTRO_CLIENTE_TB))
+        if(!Schema::hasTable(Table::CLIENTES))
             {
-            Schema::create(Table::CADASTRO_CLIENTE_TB, function (Blueprint $table) {
+            Schema::create(Table::CLIENTES, function (Blueprint $table) {
             $table->id();
             $table->string('Razao_Social');
             $table->string('Nome_Fantasia');
@@ -32,6 +32,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists(Table::CADASTRO_CLIENTE_TB);
+        Schema::dropIfExists(Table::CLIENTES);
     }
 };
